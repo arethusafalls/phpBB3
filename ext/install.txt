@@ -1,0 +1,2 @@
+1) Backup the whole "/phpbb/ext/posey" folder and all its subfolders.
+2) Recursively copy this extracted "/posey" folder and all its subfolders into the "/phpbb/ext/posey" folder. Overwrite any files.

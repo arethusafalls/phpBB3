@@ -1,0 +1,8 @@
+The modifications are to 2x core files.
+
+Copy the .php files in this zipped archive to the following destinations:
+
+search.php => <phpBB>/
+common.php => <phpBB>/language/en/common.php
+
+Perhaps backup the original files before overwriting in case.

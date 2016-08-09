@@ -1,0 +1,10 @@
+Disabling Rank Titles
+=====================
+
+Copy the following files in this .zip to the following locations (backup original before overwriting)
+
+viewtopic_body_postrow_rank_after.html	=> ext\posey\multiranks\styles\prosilver\template\event
+viewtopic_body.html			=> styles\prosilver\template
+
+Then:
+ACP -> Purge the Cache

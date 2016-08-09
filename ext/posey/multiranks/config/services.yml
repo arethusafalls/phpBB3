@@ -1,0 +1,30 @@
+services:
+    posey.multiranks.admin.controller:
+        class: posey\multiranks\controller\admin_controller
+        arguments:
+            - '@dbal.conn'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+
+    posey.multiranks.ucp.controller:
+        class: posey\multiranks\controller\ucp_controller
+        arguments:
+            - '@dbal.conn'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '%core.root_path%'
+            - '%core.php_ext%'
+
+    posey.multiranks.listener:
+        class: posey\multiranks\event\listener
+        arguments:
+            - '@template'
+            - '@dbal.conn'
+            - '@config'
+            - '%core.root_path%'
+        tags:
+            - { name: event.listener }
